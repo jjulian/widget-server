@@ -1,0 +1,19 @@
+.cleanslate.upvotes-badge {
+  padding: 10px 20px !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-radius: 4px !important;
+  width: 250px !important;
+}
+
+.cleanslate.upvotes-badge.light {
+  background-color: #fff !important;
+  color: #333 !important;
+  border-color: orange !important;
+}
+
+.cleanslate.upvotes-badge.dark {
+  background-color: #333 !important;
+  color: #ccc !important;
+  border-color: yellow !important;
+}

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Host page. This site hosts our widget</title>
+    <script src="jquery-1.6.2.min.js"></script>
+    <script src="http://localhost:3000/widgets/badge.js"></script>
+    <style>
+      body {
+        background-color: #999;
+        font-family: Helvetica;
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      Lorem Ipsum 1
+    </section>
+    <section>
+      Lorem Ipsum 2
+    </section>
+    <section>
+      <script id="upvotes-badge">
+        Upvotes.Badge({
+          username: 'abc',
+          theme: 'dark'
+        });
+      </script>
+    </section>
+    <section>
+      Lorem Ipsum 3
+    </section>
+  </body>
+</html>

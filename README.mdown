@@ -1,0 +1,50 @@
+# 3rd Party JavaScript Widgets
+Jonathan Julian (@jonathanjulian)
+April 23, 2012, BohConf in Austin, TX (the RailsConf un-conf)
+
+## What is a widget?
+* Some part of a page generated from another site
+* Not an iframe
+* easy for the site owner to implement
+
+## Examples
+* Tweet button - <https://dev.twitter.com/docs/tweet-button>
+* FB Like Button - <https://developers.facebook.com/docs/reference/plugins/like/>
+* Stack Overflow Flair
+
+## Issues
+* communication
+* namespace collisions
+* need prereq JS libs
+* styling the widget
+
+## Solutions
+* use JSONP to get data, use JSONP to transmit data
+* run your code in a scoped fn
+* load scripts dynamically
+* use a reset stylesheet on your elements
+
+## Server-side
+* expose data as JSON with a callback
+* accept JSONP "submissions"
+
+## Client-side
+* create a namespace
+* load scripts
+* load data
+* load CSS
+* build the DOM elements
+* respond to events
+
+## Alternative technologies
+* iframe
+* img tag
+* PostMessage - <https://developer.mozilla.org/en/DOM/window.postMessage>
+
+## Thanks for the inspiration
+* <http://alexmarandon.com/articles/web_widget_jquery/>
+
+## Running this code
+* Run the server `$ rails server`
+* Run the host web site `nginx -p <absolute path>/host/ -c <absolute path>/host/nginx.conf`
+* Go to <http://localhost:8080>
