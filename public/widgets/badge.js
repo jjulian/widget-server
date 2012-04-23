@@ -64,8 +64,9 @@
     },
   
     sendUpvote: function() {
+      // note that JSONP is only http GET
       jQuery.ajax({
-        url: serverFQDN + '/users/' + this.options.username + '/upvote.js',
+        url: serverFQDN + '/users/' + this.options.username + '/upvote.js', //pass any params in the query string
         dataType: 'jsonp',
         success: function(user) {
           if (!user) {
