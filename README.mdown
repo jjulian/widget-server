@@ -5,6 +5,7 @@ April 23, 2012, BohConf in Austin, TX (the RailsConf un-conf)
 ## What is a widget?
 * Some part of a page generated from another site
 * Not an iframe
+* Built using JavaScript
 * easy for the site owner to implement
 
 ## Examples
@@ -20,15 +21,15 @@ April 23, 2012, BohConf in Austin, TX (the RailsConf un-conf)
 
 ## Solutions
 * use JSONP to get data, use JSONP to transmit data
-* run your code in a scoped fn
+* run your code in a scoped function
 * load scripts dynamically
 * use a reset stylesheet on your elements
 
-## Server-side
+## Server-side: Rails 3
 * expose data as JSON with a callback
 * accept JSONP "submissions"
 
-## Client-side
+## Client-side: JavaScript
 * create a namespace
 * load scripts
 * load data
@@ -45,6 +46,6 @@ April 23, 2012, BohConf in Austin, TX (the RailsConf un-conf)
 * <http://alexmarandon.com/articles/web_widget_jquery/>
 
 ## Running this code
-* Run the server `$ rails server`
-* Run the host web site `nginx -p <absolute path>/host/ -c <absolute path>/host/nginx.conf`
+* Run the server `rails server`
+* Run the host web site ``nginx -p `pwd`/host/ -c `pwd`/host/nginx.conf``
 * Go to <http://localhost:8080>
