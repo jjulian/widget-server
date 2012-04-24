@@ -24,7 +24,6 @@
         script_tag.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js");
         (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(script_tag);
         if (script_tag.attachEvent) {
-          console.log('this is IE');
           script_tag.onreadystatechange = function() { // for IE
             if (this.readyState == 'complete' || this.readyState == 'loaded') {
               this.onreadystatechange = null;
